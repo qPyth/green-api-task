@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/ui/css/main.css">
+    <link rel="stylesheet" href="/ui/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/ui/main.js"></script>
+    <title>GreenAPI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Green API</h1>
+        </div>
+        <div class="main">
+            <div class="request">
+                <div class="input_group">
+                    <div class="input">
+                        <label for="id_instance">idInstance</label>
+                        <input type="text" id="id_instance" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="apiToken_instance">apiTokenInstance</label>
+                        <input type="text" id="apiToken_instance" required>
+                    </div>
+                </div>
+
+                <div class="getInfo">
+                    <div class="input_group">
+                        <button id="settings_button">getSettings</button>
+                        <button id="state_button">getStateInstance</button>
+                    </div>
+                </div>
+
+                <div class="send_message">
+                    <div class="input_group">
+                        <div class="input">
+                            <label for="phone_number">Phone number</label>
+                            <input type="text" id="phone_number" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="message">Message</label>
+                            <textarea type="text" id="message" required rows="10"></textarea>
+                        </div>
+
+                        <button type="submit" id="send_message">Send</button>
+                    </div>
+                </div>
+
+                <div class="send_file">
+                    <div class="input_group">
+                        <div class="input">
+                            <label for="phone_number_file">Phone number</label>
+                            <input type="text" id="phone_number_file" required>
+                        </div>
+
+                        <div class="input">
+                            <label for="file_link">File link</label>
+                            <input type="text" id="file_link" required>
+                        </div>
+
+                        <button type="submit" id="send_file">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="response">
+                <h2>Response</h2>
+                <div class="output" id="result"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
